@@ -1,27 +1,27 @@
 var info = [{
     "username": "davidjfreedman",
-    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+    "bg": "http://cdn.siteinspire.com/screengrabs/images/000/003/683/medium.jpg"
 }, {
     "username": "robdesousa",
-    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+    "bg": "http://a1.dspnimg.com/data/l/2052686975980_bzn9KPlR_l.jpg"
 }, {
     "username": "Matthiasak",
-    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+    "bg": "http://cdn.siteinspire.com/screengrabs/images/000/003/245/medium.jpg"
 }, {
     "username": "Keya-Moradi",
-    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+    "bg": "http://a1.dspnimg.com/data/l/1936715834156_aRXG3cWh_l.jpg"
 }, {
     "username": "KhalidAdil",
-    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+    "bg": "http://a1.dspnimg.com/data/l/385402229381_yQazixSh_l.jpg"
 }, {
     "username": "joeybergeron",
-    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+    "bg": "http://a1.dspnimg.com/data/l/22eaf34354567ffe9cf9da5a908c51b6_axlbqzhY_l.jpg"
 }, {
     "username": "atroppe",
-    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+    "bg": "http://a1.dspnimg.com/data/l/915513370065_9BCfryrG_l.jpg"
 }, {
     "username": "graym",
-    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+    "bg": "http://a1.dspnimg.com/data/l/1848829587299_SiVhlrQ8_l.jpg"
 }, ]
 
 $(function() {
