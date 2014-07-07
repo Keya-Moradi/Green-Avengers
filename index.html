@@ -1,23 +1,31 @@
 <html>
-<header></header>
+<header><link href="http://necolas.github.io/normalize.css/3.0.1/normalize.css" rel="stylesheet">
+<link href="https://raw.githubusercontent.com/typeplate/starter-kit/master/css/typeplate.css" rel="stylesheet">
+<link href="./gaStylesheet.css" rel="stylesheet">
+</header>
 
 <body>
     <div class="wholeBox">
         <div class="topHalf">
-            <div class="profPic"></div>
+        <script type="person" id="github_profile_template">
+        <div class="profile">
+
+    </script>
+            <div class="profPic">            <img src="<%= avatar_url %>">
+</div>
             <div class="leftArrow"><
             </div>
             <div class="rightArrow">></div>
             <div class="topText">
-                <div class="profName">David Freedman</div>
-                <div class="comments">740</div>
+                <div class="profName"><%= name %></div>
+                <div class="comments"><%= id %></div>
             </div>
         </div>
         <div class="bottomHalf">
             <div class="infoBox">
                 <ul>
-                    <li>location: Houston, TX</li>
-                    <li>blog: http://www.google.com</li>
+                    <li>location: <%= location %></li>
+                    <li>blog: <%= blog %></li>
                 </ul>
             </div>
             <div class="hirebutton">
@@ -25,6 +33,9 @@
             </div>
         </div>
     </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src='./grnAvengers.js'></script>
 </body>
 
 </html>
