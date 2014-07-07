@@ -40,3 +40,12 @@ $(function() {
         $('body').append(github_html);
     })
 });
+
+var leftArrow = $('.leftArrow');
+
+function callback(event) {
+    console.log(event.type);
+};
+
+
+leftArrow.addEventListener("click", callback);
