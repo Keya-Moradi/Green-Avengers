@@ -38,14 +38,17 @@ $(function() {
     github_data.then(function(data) {
         var github_html = createProfileStringFromData(data);
         $('body').append(github_html);
+
+        var leftArrow = $('.leftArrow');
+
+        function callback(event) {
+            console.log(event.type);
+        };
+
+
+        leftArrow[0].addEventListener("click", callback);
+
     })
+
+
 });
-
-var leftArrow = $('.leftArrow');
-
-function callback(event) {
-    console.log(event.type);
-};
-
-
-leftArrow.addEventListener("click", callback);
