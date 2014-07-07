@@ -1,5 +1,31 @@
-$(function() {
+var info = [{
+    "username": "davidjfreedman",
+    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+}, {
+    "username": "robdesousa",
+    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+}, {
+    "username": "Matthiasak",
+    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+}, {
+    "username": "Keya-Moradi",
+    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+}, {
+    "username": "KhalidAdil",
+    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+}, {
+    "username": "joeybergeron",
+    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+}, {
+    "username": "atroppe",
+    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+}, {
+    "username": "graym",
+    "bg": "https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png"
+}, ]
 
+$(function() {
+    var github_username = "graym";
     var github_url = "https://api.github.com/users/";
     var url = github_url + github_username;
 
@@ -11,6 +37,6 @@ $(function() {
 
     github_data.then(function(data) {
         var github_html = createProfileStringFromData(data);
-        console.log(github_html)
         $('body').append(github_html);
-    });
+    })
+});
