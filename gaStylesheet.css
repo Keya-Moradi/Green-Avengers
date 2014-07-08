@@ -9,7 +9,7 @@ body {
 }
 .wholeBox {
     display: block;
-    width: 400px;
+    width: 475px;
     margin: 0px auto;
     top: 50px;
     -webkit-transform: translateY(25%);
