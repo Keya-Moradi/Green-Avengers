@@ -3,51 +3,58 @@
     <link href="http://necolas.github.io/normalize.css/3.0.1/normalize.css" rel="stylesheet">
     <link href="https://raw.githubusercontent.com/typeplate/starter-kit/master/css/typeplate.css" rel="stylesheet">
     <link href="./gaStylesheet.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </header>
 
 <body>
     <div class="destination"></div>
-            <script type="person" id="github_profile_template">
+    <!-- <script type="person" id="github_profile_template"> -->
     <div class="wholeBox" style="background-image: url(<%= background %>)">
         <div class="topHalf">
             <div class="profile">
                 <div class="profPic">
-                   <div class="leftArrow">&lt;</div>
- <img src="<%= avatar_url %>">
+                    <div class="leftArrow">
+                        <h1>&lt;</h1>
+                    </div>
+                    <img src="<%= avatar_url %>">
 
-                <div class="rightArrow"><h2>&gt;</h2></div>
-                 </div>
+                    <div class="rightArrow">
+                        <h1>&gt;</h1>
+                    </div>
+                </div>
                 <div class="topText">
                     <div class="profName">
                         <%= name %>
                     </div>
                     <div class="comments">
-                        <%= id %>
+                        <i class="fa fa-comment"></i> <%= id %>
                     </div>
                 </div>
             </div>
-            <div class="bottomHalf">
-                <div class="infoBox">
-                    <ul>
-                        <li>location:
-                            <%= location %>
-                        </li>
-                        <li>blog:
-                            <%= blog %>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hirebutton">
-                    Insert Button Here
-                </div>
+        </div>
+        <div class="bottomHalf">
+            <div class="infoBox">
+                <ul>
+                    <li>location:
+                        <%= location %>
+                    </li>
+                    <li>blog:
+                        <%= blog %>
+                    </li>
+                </ul>
+            </div>
+            <div class="hirebutton">
+                Hire<br>Me!
             </div>
         </div>
     </div>
-    </script>
-               <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                   <script src='
+    </div>
+    <div class="example"><img src="file:///Users/Winterfell/Desktop/Screen%20Shot%202014-07-07%20at%204.52.18%20PM.png"></div>
+    <!-- </script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src='
     http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js'></script>
-            <script src='./grnAvengers.js'></script>
+    <script src='./grnAvengers.js'></script>
 </body>
 
 </html>

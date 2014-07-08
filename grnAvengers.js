@@ -55,7 +55,7 @@ $(function() {
         })
     }
 
-    initApp();
+    // initApp();
 
     function leftClick(event) {
         hulk--;
