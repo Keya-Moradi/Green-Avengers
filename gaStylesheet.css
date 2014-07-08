@@ -5,7 +5,7 @@ body {
 }
 .wholeBox {
 	display: block;
-	width: 50%;
+	width: 400px;
 	margin: 0px auto;
 	height: 75%;
 	background-color: orange;
@@ -19,10 +19,22 @@ body {
 	/*background-image: url(https://s3.amazonaws.com/uploads.hipchat.com/31349/921543/pzK8cBdoxyrm95D/upload.png);*/
 	background-size: cover;
 }
+.profPic {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
 .profPic img {
 	width: 150px;
 	border-radius: 50px;
 }
 .leftArrow, .rightArrow {
-	font-size: 3em;
+	position: absolute;
+	top: 10%;
+	display: inline-block;
+	font-size: 4em;
+}
+.leftArrow h2, .rightArrow h2 {
+	cursor: pointer;
 }
