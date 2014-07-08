@@ -33,7 +33,8 @@ $(function() {
         var github_url = "https://api.github.com/users/";
         var url = github_url + github_username;
 
-        var github_data = $.getJSON(url);
+        var github_data = $.getJSON(url).fail(function(){alert("Green Avengers failed to retrieve the URL")});
+
 
         var script_tag = document.querySelector('#github_profile_template');
         var template_string = script_tag.textContent;
