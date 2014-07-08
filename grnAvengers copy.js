@@ -1,12 +1,12 @@
 var info = [{
     "username": "davidjfreedman",
-    "bg": "http://a1.dspnimg.com/data/l/1432544597039_0t0RELUq_l.jpg"
+    "bg": "http://cdn.siteinspire.com/screengrabs/images/000/003/683/medium.jpg"
 }, {
     "username": "robdesousa",
     "bg": "http://a1.dspnimg.com/data/l/2052686975980_bzn9KPlR_l.jpg"
 }, {
     "username": "Matthiasak",
-    "bg": "http://a1.dspnimg.com/data/l/1667480861921_1fUrCiZf_l.jpg"
+    "bg": "http://cdn.siteinspire.com/screengrabs/images/000/003/245/medium.jpg"
 }, {
     "username": "Keya-Moradi",
     "bg": "http://a1.dspnimg.com/data/l/1936715834156_aRXG3cWh_l.jpg"
@@ -15,7 +15,7 @@ var info = [{
     "bg": "http://a1.dspnimg.com/data/l/385402229381_yQazixSh_l.jpg"
 }, {
     "username": "joeybergeron",
-    "bg": "http://a1.dspnimg.com/data/l/536094170233_gqnDjoSG_l.jpg"
+    "bg": "http://a1.dspnimg.com/data/l/22eaf34354567ffe9cf9da5a908c51b6_axlbqzhY_l.jpg"
 }, {
     "username": "atroppe",
     "bg": "http://a1.dspnimg.com/data/l/915513370065_9BCfryrG_l.jpg"
@@ -24,12 +24,11 @@ var info = [{
     "bg": "http://a1.dspnimg.com/data/l/1848829587299_SiVhlrQ8_l.jpg"
 }, ]
 
-var hulk = 0;
+var hulk = 0
 
 $(function() {
     function initApp() {
         var github_username = info[hulk].username;
-        var bgImage = info[hulk].bg;
         var github_url = "https://api.github.com/users/";
         var url = github_url + github_username;
 
@@ -40,8 +39,8 @@ $(function() {
         var createProfileStringFromData = _.template(template_string);
 
         github_data.then(function(data) {
-            data.background = bgImage;
             var github_html = createProfileStringFromData(data);
+            console.log(github_html);
             $('.destination')[0].innerHTML = (github_html);
 
             var leftArrow = $('.leftArrow');
@@ -72,5 +71,6 @@ $(function() {
         }
         initApp();
     };
+
 
 });
