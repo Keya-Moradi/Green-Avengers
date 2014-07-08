@@ -71,5 +71,4 @@ $(function() {
         initApp();
     };
 
-
 });
